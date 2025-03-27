@@ -12,6 +12,7 @@ class GameController {
   }
 
   void checkOut(int index) {
+    List.empty();
     List numbers = model.numbers;
     if (index % 4 != 0 && (index - 1) >= 0) {
       if (numbers[index - 1] == "") {
@@ -42,8 +43,6 @@ class GameController {
   }
 
   void checkWin() {
-    if (model.numbers.join("") == "123456789101112131415") {
-    }
+    if (model.numbers.join("") == "123456789101112131415") {}
   }
-
 }
